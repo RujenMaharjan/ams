@@ -1,0 +1,197 @@
+{%extends 'base.html'%} {%block content%} {%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Load static files -->
+    <link rel="stylesheet" href="{% static 'css/styles1.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/abtstyles.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}" />
+  </head>
+
+  <body>
+    <!-- About Us Section -->
+    <section class="about-us">
+      <div class="section">
+        <div class="container">
+          <div class="content-section">
+            <div class="title">
+              <h1>About Us</h1>
+            </div>
+            <div class="content">
+              <h3>Empowering asset management through innovative solutions</h3>
+              <p>
+                We are a team of dedicated developers, designers, and project
+                managers committed to transforming the way businesses handle
+                asset management. Our platform provides an intuitive, secure,
+                and efficient system for tracking and managing assets, designed
+                to meet the needs of organizations of all sizes.
+              </p>
+              <p>
+                With a passion for technology and problem-solving, we aim to
+                deliver a seamless experience that helps businesses streamline
+                operations, reduce costs, and enhance productivity. Our team
+                brings together expertise from different areas, working
+                collaboratively to create solutions that are not only functional
+                but also user-friendly and scalable.
+              </p>
+              <div class="button">
+                <a href="#">Read more</a>
+              </div>
+            </div>
+            <div class="social">
+              <a href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+          </div>
+          <div class="image-section">
+            <img src="{% static 'images/Team.jpg' %}" alt="Team" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="team-section">
+      <h2>Our Team</h2>
+      <p>
+        We have a dedicated team of professionals working to make your
+        experience amazing.
+      </p>
+
+      <div class="team">
+        <!-- Team Member 1 -->
+        <div class="team-member">
+          <img src="{% static 'images/Sahas.jpg' %}" alt="Team Member 1" />
+          <h3>Sahas Amatya</h3>
+          <p>Project Lead</p>
+          <div class="team-desc">
+            Experienced leader with a passion for project management, ensuring
+            successful and timely delivery of all project phases.
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="team-member">
+          <img src="{% static 'images/Rujen.jpg' %}" alt="Team Member 2" />
+          <h3>Rujen Maharjan</h3>
+          <p>Backend Develpment lead</p>
+          <div class="team-desc">
+            Expert in backend technologies, ensuring scalable and efficient
+            server-side solutions for our system architecture.
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="team-member">
+          <img src="{% static 'images/Roman.jpg' %}" alt="Team Member 3" />
+          <h3>Roman Maharjan</h3>
+          <p>Frontend Development lead</p>
+          <div class="team-desc">
+            Passionate about crafting responsive and intuitive user interfaces
+            that enhance the user experience.
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <!-- Team Member 4 -->
+        <div class="team-member">
+          <img src="{% static 'images/Prashant.jpg' %}" alt="Team Member 4" />
+          <h3>Prashant G.C</h3>
+          <p>Backend Developer</p>
+          <div class="team-desc">
+            Skilled in database management and server-side logic, contributing
+            to robust and secure backend solutions.
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <!-- Team Member 5 -->
+        <div class="team-member">
+          <img src="{% static 'images/Maitreya.jpg' %}" alt="Team Member 5" />
+          <h3>Maitreya Shakya</h3>
+          <p>Frontend Developer</p>
+          <div class="team-desc">
+            Frontend specialist with a focus on creating sleek, user-friendly
+            designs that make complex tasks simple for users.
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <!-- Team Member 6 -->
+        <div class="team-member">
+          <img src="{% static 'images/Avantika.jpg' %}" alt="Team Member 6" />
+          <h3>Avantika Singh Thakuri</h3>
+          <p>Frontend Developer</p>
+          <div class="team-desc">
+            Enthusiastic about modern web design trends and creating visually
+            appealing interfaces for seamless user interaction.
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <!-- Team Member 7 -->
+        <div class="team-member">
+          <img src="{% static 'images/Yasna.jpg' %}" alt="Team Member 7" />
+          <h3>Yasna Dongol</h3>
+          <p>Frontend Developer</p>
+          <div class="team-desc">
+            Creative designer with a knack for transforming ideas into visually
+            engaging web applications.
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <!-- Team Member 8 -->
+        <div class="team-member">
+          <img src="{% static 'images/Farhan.jpg' %}" alt="Team Member 8" />
+          <h3>Farhan akhtar</h3>
+          <p>Quality Control</p>
+          <div class="team-desc">
+            Dedicated to maintaining the highest quality standards, ensuring
+            every release is error-free and polished.
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+{%endblock%}

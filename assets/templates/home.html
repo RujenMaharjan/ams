@@ -1,0 +1,80 @@
+{% extends 'base.html' %} {% block content %} {%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gidugu&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to the static CSS file -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Parallax section -->
+    <div class="parallax">
+      <div class="content">
+        <h1 class="slogan">Unlock the Potential of Your Assets</h1>
+        <div class="search-bar">
+          <div class="search-input-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="Search..." />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Transparent buttons -->
+    <div class="transparent-buttons">
+      <a href="{% url 'home' %}">
+        <button class="active">
+          <i class="fas fa-home" style="color: #74c0fc"></i>&nbsp;&nbsp;Home
+        </button>
+      </a>
+      <a href="#photos">
+        <button><i class="fas fa-image"></i>&nbsp;&nbsp;Photos</button>
+      </a>
+      <a href="#videos">
+        <button><i class="fas fa-video"></i>&nbsp;&nbsp;Videos</button>
+      </a>
+      <a href="#illustrations">
+        <button>
+          <i class="fas fa-paint-brush"></i>&nbsp;&nbsp;Illustrations
+        </button>
+      </a>
+    </div>
+
+    <!-- First row of cards -->
+    <div class="image-grid">
+      {% for asset in assets %}
+      <a href="{% url 'asset' asset.id %}" class="card">
+        <img
+          src="https://via.placeholder.com/300"
+          alt="{{ asset.asset_name }}"
+        />
+        <div class="overlay">
+          <p>{{ asset.asset_name }} Details</p>
+          <button class="like-btn"><i class="fas fa-heart"></i></button>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+    <!-- Script file -->
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
+
+{% endblock %}

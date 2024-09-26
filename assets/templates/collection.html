@@ -1,0 +1,41 @@
+{%extends 'base.html'%} {%block content%} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'css/collection.css' %}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- TOP -->
+    <div class="collection-container-main">
+      <h1>Your Collections</h1>
+      <hr class="collection-container__under" />
+
+      <!-- Collections -->
+      <div class="collection-container__collections">
+        <!-- COLLECTION CARDS -->
+        <div class="collection-card__container">
+          <div class="card__description">Test 1</div>
+          <div class="card-img__container">
+            <img src="{% static 'images/Gon.png' %}" class="card__img" />
+          </div>
+
+          <button class="card__deleteButton">
+            <i style="margin-left: 10px" class="fa icons"> &#xf014; </i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+{%endblock%}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.section {
+    width: 100%;
+    min-height: 75vh;
+    background-color: #ddd;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    /* Space between content and image */
+    align-items: center;
+    /* Vertically center the content and image */
+    margin: auto;
+    padding-top: 50px;
+    /* Reduce padding if necessary */
+    width: 80%;
+
+}
+
+.container-section {
+    width: 55%;
+    padding-right: 20px;
+
+}
+
+.image-section {
+    width: 40%;
+    margin-top: -30px;
+    /* Adjust this value to bring the image up */
+    display: flex;
+    justify-content: flex-end;
+    /* Ensures the image is aligned to the right */
+
+}
+
+.image-section img {
+    width: 100%;
+    /* Ensures image takes up the full section width */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+.content-section .title {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.content-section .content h3 {
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 21px;
+
+}
+
+.content-section .content p {
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.content-section .content .button {
+    margin-top: 30px;
+}
+
+.content-section .content .button a {
+    background-color: #3d3d3d;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+.content-section .content .button a:hover {
+    background-color: #a52a2a;
+    color: #fff;
+}
+
+.content-section .social {
+    margin: 40px 40px;
+}
+
+.content-section .social i {
+    color: #a5a5a5;
+    font-size: 50px;
+    margin-right: 20px;
+    /* Space between each icon */
+}
+
+.content-section .social i:hover {
+    color: #3d3d3d;
+    transition: color 0.3s ease;
+}
+
+.content-section .social a {
+    display: inline-block;
+    margin-right: 20px;
+    /* Adds space between the icon links */
+}
